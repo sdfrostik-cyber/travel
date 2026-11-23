@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Time | Туристическое агентство</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#222}
+header{position:absolute;top:0;width:100%;padding:25px 6%;display:flex;justify-content:space-between;align-items:center;color:#123}
+.logo{font-family:Georgia;font-style:italic;font-size:25px}
+nav a{margin-left:25px;color:#123;text-decoration:none}
+nav a:hover{color:#fff}
+.hero{height:550px;background:linear-gradient(#0002,#0003),url('1.jpg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#102c49}
+.hero h1{font-size:48px;margin:15px}
+.hero p{font-family:Georgia;font-size:30px;font-style:italic}
+.btn{display:inline-block;margin-top:20px;padding:12px 25px;border:1px solid #345;border-radius:25px;color:#123;text-decoration:none;cursor:pointer;background:#ffffff55}
+.btn:hover{background:#123;color:white}
+section{padding:65px 6%;text-align:center}
+h2{font-size:27px;margin:12px}
+.sub{color:#999;font-size:13px;margin:20px auto 35px;max-width:700px}
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.place{position:relative;height:190px;overflow:hidden}
+.place img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.place:hover img{transform:scale(1.08);opacity:.65}
+.place span{position:absolute;top:50%;left:0;width:100%;font-size:22px;color:white;opacity:0;transform:translateY(-50%)}
+.place:hover span{opacity:1}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:30px}
+th,td{padding:13px 7px;border:1px solid #eee}
+th{background:#e8e8e8}
+tr:nth-child(even){background:#f5f5f5}
+.gallery{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;padding:50px 0}
+.diamond{width:145px;height:145px;overflow:hidden;transform:rotate(45deg);margin:20px}
+.diamond img{width:145%;height:145%;object-fit:cover;transform:rotate(-45deg) scale(1.1)}
+footer{background:#aaa;color:white;text-align:center;padding:35px;line-height:2;font-size:13px}
+footer a{color:white;margin:10px;text-decoration:none}
+@media(max-width:700px){
+header{padding:15px;flex-wrap:wrap}
+nav a{margin:8px;font-size:12px}
+.hero{height:450px}
+.hero h1{font-size:30px}
+.hero p{font-size:22px}
+.places{grid-template-columns:1fr}
+.place{height:210px}
+table{font-size:9px}
+th,td{padding:7px 3px}
+.diamond{width:90px;height:90px;margin:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Travel Time</div>
+<nav>
+<a href="#schedule">Расписание</a>
+<a href="#gallery">Галерея</a>
+<a href="#contacts">Контакты</a>
+</nav>
+</header>
+
+<div class="hero">
+<div>
+<p>Туристическое агентство</p>
+<h1>Приветствует Вас!</h1>
+<a class="btn" href="#schedule">Купить билеты</a>
+</div>
+</div>
+
+<section>
+<p>ПОЧЕМУ ИМЕННО НАШЕ ТУРИСТИЧЕСКОЕ АГЕНТСТВО?</p>
+<h2>Немного нашей уникальности</h2>
+<div class="sub">На нашем сайте вы можете просматривать расписание вылетов и прилётов, а также выбирать билеты и просматривать нашу галерею путешествий.</div>
+<div class="places">
+<div class="place"><img src="egipet.jpg"><span>Египет</span></div>
+<div class="place"><img src="dubai.jpg"><span>Дубай</span></div>
+<div class="place"><img src="ispaniya.jpg"><span>Испания</span></div>
+</div>
+</section>
+
+<section id="schedule">
+<h2>Расписание</h2>
+<table>
+<tr><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th><th>Воскресенье</th></tr>
+<tr><td>8:10-12:15</td><td>-</td><td>2:15-11:20</td><td>-</td><td>8:10-12:15</td><td>14:00-16:10</td><td>Астана</td></tr>
+<tr><td>-</td><td>9:50-13:55</td><td>-</td><td>15:20-19:25</td><td>-</td><td>11:45-15:50</td><td>Дубай</td></tr>
+<tr><td>17:45-21:30</td><td>-</td><td>9:00-12:45</td><td>-</td><td>8:15-12:00</td><td>-</td><td>Испания</td></tr>
+<tr><td>-</td><td>13:30-17:40</td><td>-</td><td>2:15-6:25</td><td>-</td><td>3:30-7:40</td><td>Сочи</td></tr>
+<tr><td>8:20-12:20</td><td>-</td><td>7:30-12:30</td><td>-</td><td>9:15-14:15</td><td>-</td><td>Греция</td></tr>
+</table>
+</section>
+
+<section id="gallery">
+<h2>Галерея</h2>
+<div class="gallery">
+<div class="diamond"><img src="bali.jpg"></div>
+<div class="diamond"><img src="cei.jpg"></div>
+<div class="diamond"><img src="gruzia.jpg"></div>
+<div class="diamond"><img src="соччи.jpg"></div>
+<div class="diamond"><img src="nid.jpg"></div>
+</div>
+</section>
+
+<footer id="contacts">
+<div style="font-size:22px">●　♥️　◎</div>
+<h3>Наш адрес</h3>
+Казахстан<br>
++7 777 234 34 56<br>
+г. Астана, ул. Абая 146<br>
+©2026 Travel Time | All rights reserved
+</footer>
+
+</body>
+</html>
